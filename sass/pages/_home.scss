@@ -1,0 +1,13 @@
+hr {
+    width: 100%;
+    max-width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    height: 1px;
+    background-color: #E4E9F2;
+    margin-bottom: 9rem;
+    @include responsive(phone) {
+        display: none;
+    }
+}

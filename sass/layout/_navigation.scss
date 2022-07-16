@@ -1,0 +1,51 @@
+.sitenav {
+    margin-right: auto;
+    @include responsive(tables) {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    &__item:not(:last-child) {
+        margin-right: 3.2rem;
+    }
+    &__item-link {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        line-height: 1.7;
+        color: $text-color;
+        position: relative;
+        transition: color .3s ease;
+        &:hover {
+            color: $title-color;
+        }
+    }
+    &__item-link::after {
+        content: "";
+        width: 0%;
+        height: 4px;
+        position: absolute;
+        background-color: $primary-color;
+        left: 0;
+        bottom: -5rem;
+        transition: .3s ease;
+    }
+    &__item-link::before {
+        content: "";
+        width: 0%;
+        height: 4px;
+        position: absolute;
+        background-color: $primary-color;
+        right: 0;
+        bottom: -5rem;
+        transition: .3s ease;
+    }
+    &__item-link:hover::after,
+    &__item-link:hover::before {
+        width: 50%;
+        transition-delay: .2s;
+    }
+}

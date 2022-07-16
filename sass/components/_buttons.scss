@@ -1,0 +1,110 @@
+.burger__link {
+    border: none;
+    background-color: $site-bg-color;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.3rem;
+    margin-right: 1.6rem;
+    background-color: #fff;
+    @include responsive(phone) {
+        display: flex;
+    }
+}
+.burger__img {
+    width: 2rem;
+    height: 2.2rem;
+    object-fit: cover;
+}
+
+.cards__btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    @include responsive(phone) {
+        flex-direction: column;
+    }
+}
+.cards__left-btn {
+    padding: 2.1rem 1.5rem 1.7rem 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #F6F8FD;
+    margin-right: 1.6rem;
+    @include responsive(phone) {
+        width: 100%;
+        padding: 2.1rem 2.3rem 1.8rem 2.4rem;
+        margin-bottom: 1.6rem;
+        margin-right: 0;
+    }
+}
+.cards__left-intro {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.24;
+    color: $title-color;
+    @include responsive(phone) {
+        justify-content: space-between;
+    }
+    span:nth-child(1) {
+        display: block;
+        width: 12px;
+        height: 3.33px;
+        background-image: url("../images/svg/minus.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 12px 3.33px;
+        margin-right: 4.55rem;
+    }
+    span:last-child {
+        display: block;
+        width: 13.71px;
+        height: 13.71px;
+        background-image: url("../images/svg/plus.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 13.71px 13.71px;
+        margin-left: 4.46rem;
+    }
+}
+
+.cards__right-btn {
+    border: none;
+    border-radius: 1rem;
+    padding: 1.9rem 7.6rem 1.8rem 7.7rem;
+    background-color: $primary-color;
+    color: $white-color;
+    transition: 0.5s ease;
+    &:hover {
+        background-color: #FFAB6A;
+        box-shadow: 0px 20px 50px -20px #FF7E1B;
+    }
+    @include responsive(phone) {
+        width: 100%;
+        padding: 1.9rem 7rem 1.8rem 7rem;
+    }
+}
+.cards__right-intro {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 1.24;
+    @include responsive(phone) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    span {
+        margin-right: 1.6rem;
+        display: block;
+        width: 17.46px;
+        height: 16px;
+        background-image: url("../images/svg/sale-fff.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 17.46px 16px;
+    }
+}
+

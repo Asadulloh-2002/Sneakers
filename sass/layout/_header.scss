@@ -1,0 +1,64 @@
+.header {
+    padding-top: 2.8rem;
+    padding-bottom: 3.4rem;
+    @include responsive(phone) {
+        padding-bottom: 2.5rem;
+    }
+    &__container {
+        @include container(1150px);
+        display: flex;
+        align-items: center;
+        @include responsive(phone) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__site-link {
+        display: inline-flex;
+        @include responsive(tables) {
+            margin-right: auto;
+        }
+    }
+    &__site-logo {
+        width: 137.5px;
+        height: 20px;
+        object-fit: contain;
+        margin-right: 5.65rem;
+    }
+    &__sale {
+        margin-right: 4.618rem;
+        @include responsive(phone) {
+            margin-right: 2.2rem;
+        }
+        span {
+            display: block;
+            width: 2.2rem;
+            height: 2rem;
+            background-image: url("../images/svg/sale.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 2.2rem 2rem;
+        }
+    }
+    &__user {
+        span {
+            display: block;
+            border-radius: 50%;
+            width: 5rem;
+            height: 5rem;
+            background-image: url("../images/png/user.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 5rem 5rem;
+            transition: .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+            @include responsive(phone) {
+                width: 2.4rem;
+                height: 2.4rem;
+                background-size: 2.4rem 2.4rem;
+            }
+        }
+        span:hover {
+            border: 2px solid $primary-color;
+        }
+    }
+}
