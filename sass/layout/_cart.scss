@@ -10,14 +10,12 @@
     top: 9.4rem;
     visibility: hidden;
     @include responsive(phone) {
-        visibility: visible;
         z-index: 5;
         right: 0;
         top: 7.6rem;
         right: 10.5rem;
     }
     @include responsive(m-phone) {
-        visibility: visible;
         right: 1.6rem;
     }
 
