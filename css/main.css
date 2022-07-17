@@ -258,7 +258,7 @@ body {
 @media only screen and (max-width: 400px) {
   .cart {
     visibility: visible;
-    right: 1.95rem;
+    right: 1.6rem;
   }
 }
 .cart__title {
