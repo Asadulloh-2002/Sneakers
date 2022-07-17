@@ -2,7 +2,8 @@
     padding-top: 2.8rem;
     padding-bottom: 3.4rem;
     @include responsive(phone) {
-        padding-bottom: 2.5rem;
+        padding-bottom: 2.4rem;
+        padding-top: 1.6rem;
     }
     &__container {
         @include container(1150px);
@@ -30,7 +31,7 @@
         @include responsive(phone) {
             margin-right: 2.2rem;
         }
-        span {
+        &-img {
             display: block;
             width: 2.2rem;
             height: 2rem;
@@ -38,6 +39,9 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: 2.2rem 2rem;
+        }
+        &:hover .cart {
+            visibility: visible;
         }
     }
     &__user {

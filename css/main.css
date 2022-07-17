@@ -28,6 +28,8 @@ body {
   line-height: 1.625;
   background-color: #fff;
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* kumbh-sans-regular - latin */
@@ -155,7 +157,8 @@ body {
 }
 @media only screen and (max-width: 576px) {
   .header {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.4rem;
+    padding-top: 1.6rem;
   }
 }
 .header__container {
@@ -197,7 +200,7 @@ body {
     margin-right: 2.2rem;
   }
 }
-.header__sale span {
+.header__sale-img {
   display: block;
   width: 2.2rem;
   height: 2rem;
@@ -205,6 +208,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2.2rem 2rem;
+}
+.header__sale:hover .cart {
+  visibility: visible;
 }
 .header__user span {
   display: block;
@@ -226,6 +232,79 @@ body {
 }
 .header__user span:hover {
   border: 2px solid #FF7E1B;
+}
+
+.cart {
+  width: 100%;
+  max-width: 360px;
+  padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+  position: absolute;
+  right: 33rem;
+  top: 9.4rem;
+  visibility: hidden;
+}
+@media only screen and (max-width: 576px) {
+  .cart {
+    visibility: visible;
+    z-index: 5;
+    right: 0;
+    top: 7.6rem;
+    right: 10.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cart {
+    visibility: visible;
+    right: 1rem;
+  }
+}
+.cart__title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 19.84px;
+  color: #1D2026;
+  margin-bottom: 2.7rem;
+}
+.cart__hr {
+  width: 360px;
+  margin-left: -2.4rem;
+  border: none;
+  height: 1px;
+  background-color: #E4E9F2;
+  margin-bottom: 2.4rem;
+}
+.cart__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.cart__img-sneakers {
+  width: 5rem;
+  height: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 4px;
+  margin-right: 1.6rem;
+}
+.cart__text__wrapper {
+  margin-right: 1.9rem;
+  display: flex;
+  flex-direction: column;
+}
+.cart__text:last-child span {
+  font-weight: 700;
+  color: #1D2026;
+  margin-left: 0.6rem;
+}
+.cart__img-korzinka {
+  width: 14px;
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .cards {
@@ -501,6 +580,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 17.46px 16px;
+}
+
+.cart__btn {
+  border: none;
+  background-color: #FF7E1B;
+  padding: 2.2rem 11.9rem 1.8rem 12rem;
+  font-size: 1.24;
+  color: #fff;
+  border-radius: 1rem;
 }
 
 hr {

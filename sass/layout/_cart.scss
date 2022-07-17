@@ -1,0 +1,69 @@
+.cart {
+    width: 100%;
+    max-width: 360px;
+    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+    border-radius: 1rem;
+    background-color: $white-color;
+    box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+    position: absolute;
+    right: 33rem;
+    top: 9.4rem;
+    visibility: hidden;
+    @include responsive(phone) {
+        visibility: visible;
+        z-index: 5;
+        right: 0;
+        top: 7.6rem;
+        right: 10.5rem;
+    }
+    @include responsive(m-phone) {
+        visibility: visible;
+        right: 1rem;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 19.84px;
+        color: $title-color;
+        margin-bottom: 2.7rem;
+    }
+    &__hr {
+        width: 360px;
+        margin-left: -2.4rem;
+        border: none;
+        height: 1px;
+        background-color: #E4E9F2;
+        margin-bottom: 2.4rem;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2.4rem;
+    }
+    &__img-sneakers {
+        width: 5rem;
+        height: 5rem;
+        object-fit: contain;
+        border-radius: 4px;
+        margin-right: 1.6rem;
+    }
+    &__text__wrapper {
+        margin-right: 1.9rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &__text:last-child {
+        span {
+            font-weight: 700;
+            color: $title-color;
+            margin-left: .6rem;
+        }
+    }
+    &__img-korzinka {
+        width: 14px;
+        height: 16px;
+        object-fit: contain;
+    }
+}
