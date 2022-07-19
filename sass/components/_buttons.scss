@@ -25,51 +25,53 @@
         flex-direction: column;
     }
 }
-.cards__left-btn {
-    padding: 2.1rem 1.5rem 1.7rem 1.6rem;
-    border: none;
-    border-radius: 1rem;
-    background-color: #F6F8FD;
-    margin-right: 1.6rem;
-    @include responsive(phone) {
-        width: 100%;
-        padding: 2.1rem 2.3rem 1.8rem 2.4rem;
-        margin-bottom: 1.6rem;
-        margin-right: 0;
-    }
-}
 .cards__left-intro {
     display: flex;
     align-items: center;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.24;
-    color: $title-color;
+    justify-content: space-between;
+    width: 157px;
+    padding: 0;
+    background-color:#f6f8fd;
+    margin-right: 1.6rem;
+    border-radius: 1rem;
+    span {
+        padding: 2.3rem 2.5rem 1.8rem;
+        font-weight: 700;
+        line-height: 1.24;
+        color: $title-color;
+    }
     @include responsive(phone) {
-        justify-content: space-between;
-    }
-    span:nth-child(1) {
-        display: block;
-        width: 12px;
-        height: 3.33px;
-        background-image: url("../images/svg/minus.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 12px 3.33px;
-        margin-right: 4.55rem;
-    }
-    span:last-child {
-        display: block;
-        width: 13.71px;
-        height: 13.71px;
-        background-image: url("../images/svg/plus.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 13.71px 13.71px;
-        margin-left: 4.46rem;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-right: 1.6rem;
+        margin-bottom: 1.6rem;
     }
 }
+.cards__left-buttun {
+    padding: 2.9rem 2.7rem 3.1rem 1.6rem;
+    border: none;
+    background-color: #F6F8FD;
+    background-image: url("../images/svg/minus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.2rem .4rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    cursor: pointer;
+}
 
+.cards__left-buttun-two {
+    width: 52.3px;
+    padding: 3rem 1.6rem 3rem 2.3rem;
+    background-color: #F6F8FD;
+    background-image: url("../images/svg/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13.71px 13.71px;
+    border-radius: 0rem 1rem 1rem 0rem;
+    cursor: pointer;
+    border: none;
+}
 .cards__right-btn {
     border: none;
     border-radius: 1rem;
@@ -117,4 +119,3 @@
     color: $white-color;
     border-radius: 1rem;
 }
-
